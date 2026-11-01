@@ -3,7 +3,7 @@
   "trackingIds": {},
   "siteUrl": "https://mrvenki.github.io/deal-agents",
   "siteName": "Smart Home Deals India",
-  "redirectBase": "",
+  "redirectBase": "https://deal-redirect.helloagents.workers.dev",
   "source": "catalog",
   "rssFeeds": [],
   "niches": [
