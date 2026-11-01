@@ -48,12 +48,28 @@ test('deal finder skips posted deals and wrong niches', () => {
     { id: '2', title: 'Ceiling fan', url: 'https://www.amazon.in/dp/B012345679' },
   ];
   assert.equal(findDeal(deals, { name: 'a' }, cfg, { posted: [] }).id, '1');
-  assert.equal(findDeal(deals, { name: 'a' }, cfg, { posted: [{ dealId: '1' }] }), undefined);
+  assert.equal(findDeal(deals, { name: 'a' }, cfg, { posted: [{ dealId: '1', date: new Date().toISOString().slice(0, 10) }] }), undefined);
 });
 
-test('tracked url wraps through the redirector', () => {
-  const t = trackedUrl(goodUrl, cfg, 'a', 'p1');
-  assert.ok(t.startsWith('https://r.example.dev/go?u='));
-  const u = new URL(t).searchParams.get('u');
-  assert.equal(Buffer.from(u, 'base64url').toString(), goodUrl);
+test('tracked url wraps through the redirector with niche, product and source', () => {
+  const t = new URL(trackedUrl(goodUrl, cfg, 'a', 'prod-1', 'site'));
+  assert.equal(t.origin + t.pathname, 'https://r.example.dev/go');
+  assert.equal(Buffer.from(t.searchParams.get('u'), 'base64url').toString(), goodUrl);
+  assert.deepEqual([t.searchParams.get('n'), t.searchParams.get('p'), t.searchParams.get('s')], ['a', 'prod-1', 'site']);
+});
+
+test('flipkart links pass through, other hosts are rejected', () => {
+  const fk = 'https://www.flipkart.com/some-item/p/itm123';
+  assert.equal(affiliateUrl({ url: fk }, cfg, 'a'), fk);
+  assert.equal(affiliateUrl({ url: 'https://evil.example/dp/B012345678' }, cfg, 'a'), null);
+});
+
+test('catalog products match by niche and respect the repost cooldown', () => {
+  const c = { ...cfg, limits: { ...cfg.limits, repostAfterDays: 14 } };
+  const deals = [{ id: 'x', niche: 'b', title: 'Anything', url: 'https://www.amazon.in/dp/B012345678' }];
+  assert.equal(findDeal(deals, { name: 'a' }, c, { posted: [] }), undefined);
+  const now = Date.parse('2026-11-20');
+  const posted = (date) => ({ posted: [{ dealId: 'x', date }] });
+  assert.equal(findDeal(deals, { name: 'b' }, c, posted('2026-11-10'), now), undefined);
+  assert.equal(findDeal(deals, { name: 'b' }, c, posted('2026-10-01'), now)?.id, 'x');
 });

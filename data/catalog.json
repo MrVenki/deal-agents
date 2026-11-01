@@ -1,0 +1,18 @@
+[
+  { "id": "lavna-6way-lock", "niche": "home-security", "title": "LAVNA Digital Smart Door Lock (6-way unlock)", "description": "Opens with fingerprint, mobile app, OTP, PIN, RFID card or a manual key.", "url": "https://www.amazon.in/dp/B0CBCXKSSP" },
+  { "id": "qubo-essential-lock", "niche": "home-security", "title": "QUBO Smart Door Lock Essential Copper (Hero Group)", "description": "Smart lock with fingerprint and mobile app unlocking, one of seven unlock methods.", "url": "https://www.amazon.in/dp/B0BS9LFSWJ" },
+  { "id": "godrej-neo-lock", "niche": "home-security", "title": "Godrej Neo Advantage smart lock", "description": "Main door digital lock with four access modes including fingerprint.", "url": "https://www.amazon.in/dp/B0H6J94KMV" },
+  { "id": "elara-echo-lite-lock", "niche": "home-security", "title": "Elara Echo Lite non-WiFi smart door lock", "description": "Fingerprint, RFID card and PIN entry without needing a Wi-Fi connection.", "url": "https://www.amazon.in/dp/B0HH41MX5G" },
+  { "id": "qubo-smart-cam-3mp", "niche": "home-security", "title": "Qubo Smart Cam 360° 3MP (Hero Group)", "description": "Indoor 360° Wi-Fi camera that records to the cloud, no SD card required.", "url": "https://www.amazon.in/dp/B0G64G64YL" },
+  { "id": "cpplus-e45q-cam", "niche": "home-security", "title": "CP PLUS CP-E45Q 4MP Wi-Fi security camera", "description": "Indoor 4MP camera with AI human detection and a privacy mode.", "url": "https://www.amazon.in/dp/B0FPRFBXQM" },
+  { "id": "manomay-protect-bot", "niche": "home-security", "title": "MANOMAY Protect Bot 3MP Wi-Fi pan-tilt camera", "description": "Pan-tilt indoor camera with AI human tracking.", "url": "https://www.amazon.in/dp/B0D8BSGBCN" },
+  { "id": "aquaguard-sure-delight", "niche": "water-kitchen", "title": "Aquaguard Sure Delight RO+MC water purifier", "description": "RO purifier with a mineral cartridge from Aquaguard.", "url": "https://www.amazon.in/dp/B0CW62435R" },
+  { "id": "urban-company-native-m1", "niche": "water-kitchen", "title": "Urban Company Native M1 water purifier", "description": "10-stage RO+UV+copper+alkaline purifier.", "url": "https://www.amazon.in/dp/B0D79G62J3" },
+  { "id": "aquaguard-delight-nxt", "niche": "water-kitchen", "title": "Aquaguard Delight NXT Aquasaver water purifier", "description": "9-stage RO+UV+UF+MC purifier.", "url": "https://www.amazon.in/dp/B0CW5YZ6VV" },
+  { "id": "philips-hl7756-mixer", "niche": "water-kitchen", "title": "Philips HL7756 750W mixer grinder", "description": "750W mixer grinder with three stainless steel jars.", "url": "https://www.amazon.in/dp/B01GZSQJPA" },
+  { "id": "prestige-iris-mixer", "niche": "water-kitchen", "title": "Prestige Iris 750W mixer grinder", "description": "750W mixer grinder with four jars: three stainless steel and a juicer jar.", "url": "https://www.amazon.in/dp/B08CFJBZRK" },
+  { "id": "preethi-blue-leaf-mixer", "niche": "water-kitchen", "title": "Preethi Blue Leaf Diamond 750W mixer grinder", "description": "750W mixer grinder with three jars and a flexi lid.", "url": "https://www.amazon.in/dp/B0188KPKB2" },
+  { "id": "ecovacs-n30-plus", "niche": "home-comfort", "title": "ECOVACS DEEBOT N30 Plus robot vacuum and mop", "description": "2-in-1 robot vacuum and mop with a bagless design.", "url": "https://www.amazon.in/dp/B0FL2D9SLV" },
+  { "id": "ecovacs-y1-pro", "niche": "home-comfort", "title": "ECOVACS DEEBOT Y1 PRO robot vacuum and mop", "description": "2-in-1 robot vacuum and mop for wet and dry cleaning.", "url": "https://www.amazon.in/dp/B0D17XGQX7" },
+  { "id": "ilife-v20", "niche": "home-comfort", "title": "ILIFE V20 robot vacuum cleaner", "description": "2-in-1 vacuum and mop with laser navigation.", "url": "https://www.amazon.in/dp/B0DPHKKJ62" }
+]

@@ -25,6 +25,10 @@ async function post() {
     return console.error('Refusing to publish: "fixture" deals have fake product links. Set a real "source" in config.json.');
   }
 
+  if (!dry && !cfg.redirectBase && process.env.ALLOW_UNTRACKED !== '1') {
+    return console.error('Refusing to publish: "redirectBase" is empty, so clicks would not be logged. Deploy the worker and set it in config.json.');
+  }
+
   const deals = await fetchDeals(cfg);
   console.log(`[deal-finder] ${deals.length} candidate deals from "${cfg.source}"`);
 
@@ -56,7 +60,7 @@ async function post() {
     }
 
     const id = `${Date.now().toString(36)}-${published}`;
-    const link = trackedUrl(url, cfg, nicheName, id);
+    const link = trackedUrl(url, cfg, nicheName, deal.id, 'telegram');
     console.log(`\n[${nicheName}] ${deal.title}\n${text}\n${link}\n`);
 
     if (!dry) {
@@ -68,13 +72,17 @@ async function post() {
   }
 
   if (!dry) {
-    renderSite(cfg, state);
+    renderSite(cfg, await fetchDeals(cfg));
     saveState(state);
   }
   console.log(`Done. ${published} post(s)${dry ? ' (dry run, nothing sent or saved)' : ''}.`);
 }
 
 if (mode === 'post') await post();
+else if (mode === 'site') {
+  renderSite(cfg, await fetchDeals(cfg));
+  console.log('Site rebuilt in docs/');
+}
 else if (mode === 'analyze') {
   await analyze(cfg, state);
   if (!dry) saveState(state);

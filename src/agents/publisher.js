@@ -3,7 +3,8 @@ import { disclosureFor } from './compliance.js';
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 export function telegramMessage(text, link, originalUrl) {
-  return `${esc(text)}\n\n<a href="${esc(link)}">View on the store</a>\n\n<i>${esc(disclosureFor(originalUrl))}</i>`;
+  const disclosure = disclosureFor(originalUrl);
+  return `${esc(text)}\n\n<a href="${esc(link)}">View on the store</a>${disclosure ? `\n\n<i>${esc(disclosure)}</i>` : ''}`;
 }
 
 // Returns true when posted, false when skipped (not configured).

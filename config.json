@@ -4,14 +4,14 @@
   "siteUrl": "https://mrvenki.github.io/deal-agents",
   "siteName": "Smart Home Deals India",
   "redirectBase": "",
-  "source": "fixture",
+  "source": "catalog",
   "rssFeeds": [],
   "niches": [
-    { "name": "home-security", "emoji": "🔐", "keywords": ["lock", "camera", "cctv", "doorbell", "sensor"] },
-    { "name": "water-kitchen", "emoji": "🚰", "keywords": ["purifier", "water", "chimney", "mixer", "kitchen"] },
-    { "name": "home-comfort", "emoji": "🏠", "keywords": ["fan", "vacuum", "air", "mattress", "light"] }
+    { "name": "home-security", "label": "Home security", "emoji": "🔐", "keywords": ["lock", "camera", "cctv", "doorbell", "sensor"] },
+    { "name": "water-kitchen", "label": "Water and kitchen", "emoji": "🚰", "keywords": ["purifier", "water", "chimney", "mixer", "kitchen"] },
+    { "name": "home-comfort", "label": "Home comfort", "emoji": "🏠", "keywords": ["fan", "vacuum", "air", "mattress", "light"] }
   ],
   "strategy": { "explorePosts": 5, "epsilon": 0.2 },
-  "limits": { "postsPerRun": 1, "postsPerDay": 6, "llmCallsPerDay": 20, "maxPostChars": 900 },
+  "limits": { "postsPerRun": 1, "postsPerDay": 6, "repostAfterDays": 14, "llmCallsPerDay": 20, "maxPostChars": 900 },
   "llm": { "model": "claude-haiku-5-5", "maxTokens": 300 }
 }

@@ -33,7 +33,10 @@ async function rss(cfg) {
 
 const fixture = async () => readJson('data/fixtures/deals.json', []);
 
-const sources = { fixture, rss };
+// Hand-curated real products (data/catalog.json): {id, niche, title, description, url}.
+const catalog = async () => readJson('data/catalog.json', []);
+
+const sources = { fixture, rss, catalog };
 
 export async function fetchDeals(cfg) {
   const source = sources[cfg.source];

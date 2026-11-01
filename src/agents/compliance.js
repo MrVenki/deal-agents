@@ -1,7 +1,8 @@
 import { isAmazon } from '../links.js';
 
 export const AMAZON_DISCLOSURE = 'As an Amazon Associate I earn from qualifying purchases.';
-export const GENERIC_DISCLOSURE = 'Affiliate link: we may earn a commission at no extra cost to you.';
+// Non-Amazon stores get no commission line until a real affiliate account is attached.
+export const GENERIC_DISCLOSURE = '';
 
 const BANNED = /guarantee|lowest price|cheapest|best price|price drop|only \d+ left|limited stock|hurry|last chance|act now|free money|100%/i;
 // Amazon only allows prices that come from its own API, so never publish one.
