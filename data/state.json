@@ -20,6 +20,16 @@
       "text": "🚰 Aquaguard Sure Delight RO+MC water purifier\nRO purifier with a mineral cartridge from Aquaguard.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0CW62435R?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQ1c2MjQzNVI_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=aquaguard-sure-delight&s=telegram"
+    },
+    {
+      "id": "mvygf9fi-0",
+      "dealId": "ecovacs-n30-plus",
+      "niche": "home-comfort",
+      "date": "2026-11-01",
+      "title": "ECOVACS DEEBOT N30 Plus robot vacuum and mop",
+      "text": "🏠 ECOVACS DEEBOT N30 Plus robot vacuum and mop\n2-in-1 robot vacuum and mop with a bagless design.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0FL2D9SLV?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRkwyRDlTTFY_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ecovacs-n30-plus&s=telegram"
     }
   ],
   "llm": {},
@@ -33,7 +43,7 @@
       "clicks": 0
     },
     "home-comfort": {
-      "posts": 0,
+      "posts": 1,
       "clicks": 0
     }
   }
