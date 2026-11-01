@@ -47,6 +47,70 @@ async function counters(env, prefix) {
 
 const authorised = (req, env) => req.headers.get('authorization') === `Bearer ${env.STATS_TOKEN}`;
 
+// ---- call-back leads from the calculator site (POST /lead) ----
+const LEADS_PER_IP_PER_DAY = 5;
+
+async function notifyOwner(env, lead) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
+  const text =
+    `New loan lead\n${lead.name} · ${lead.phone}\nCity: ${lead.city || '-'}\n` +
+    `Amount: ₹${lead.amount.toLocaleString('en-IN')}\nPage: ${lead.page}`;
+  await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text }),
+  });
+}
+
+async function handleLead(req, env, ctx) {
+  const origin = env.SITE_ORIGIN ?? '';
+  const cors = {
+    'access-control-allow-origin': origin,
+    'access-control-allow-methods': 'POST, OPTIONS',
+    'access-control-allow-headers': 'content-type',
+    vary: 'Origin',
+  };
+  const reply = (body, status = 200) => Response.json(body, { status, headers: cors });
+
+  if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
+  if (req.method !== 'POST') return reply({ error: 'method' }, 405);
+  if (!origin || req.headers.get('origin') !== origin) return reply({ error: 'origin' }, 403);
+
+  let b;
+  try {
+    b = await req.json();
+  } catch {
+    return reply({ error: 'json' }, 400);
+  }
+  if (b.website) return reply({ ok: true }); // honeypot: pretend success, store nothing
+
+  const phone = String(b.phone ?? '').replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '');
+  const name = String(b.name ?? '').trim().slice(0, 80);
+  if (name.length < 2 || !/^[6-9]\d{9}$/.test(phone) || b.consent !== true) return reply({ error: 'invalid' }, 400);
+
+  const ip = req.headers.get('cf-connecting-ip') ?? 'unknown';
+  const day = new Date().toISOString().slice(0, 10);
+  const rlKey = `rl:${day}:${ip}`;
+  const used = parseInt((await env.CLICKS.get(rlKey)) ?? '0', 10);
+  if (used >= LEADS_PER_IP_PER_DAY) return reply({ error: 'rate' }, 429);
+  await env.CLICKS.put(rlKey, String(used + 1), { expirationTtl: 86400 });
+
+  const ts = Date.now();
+  const lead = {
+    ts,
+    name,
+    phone,
+    city: String(b.city ?? '').trim().slice(0, 60),
+    amount: Math.min(Math.max(Number(b.amount) || 0, 0), 1e9),
+    page: String(b.page ?? '').slice(0, 200),
+    country: req.cf?.country ?? null,
+    consent: true,
+  };
+  await env.CLICKS.put(`l:${String(ts).padStart(14, '0')}:${Math.random().toString(36).slice(2, 6)}`, JSON.stringify(lead));
+  ctx.waitUntil(notifyOwner(env, lead));
+  return reply({ ok: true });
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
@@ -79,6 +143,15 @@ export default {
       const recent = keys.slice(-100).reverse();
       const events = await Promise.all(recent.map(async (k) => JSON.parse((await env.CLICKS.get(k.name)) ?? 'null')));
       return Response.json({ events: events.filter(Boolean) });
+    }
+
+    if (url.pathname === '/lead') return handleLead(req, env, ctx);
+
+    if (url.pathname === '/leads') {
+      if (!authorised(req, env)) return new Response('Unauthorized', { status: 401 });
+      const { keys } = await env.CLICKS.list({ prefix: 'l:', limit: 1000 });
+      const leads = await Promise.all(keys.slice(-100).reverse().map(async (k) => JSON.parse((await env.CLICKS.get(k.name)) ?? 'null')));
+      return Response.json({ count: keys.length, leads: leads.filter(Boolean) });
     }
 
     return new Response('Not found', { status: 404 });

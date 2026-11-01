@@ -3,6 +3,10 @@ main = "redirect.js"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
+# Origin (scheme + host only) allowed to POST call-back leads to /lead.
+[vars]
+SITE_ORIGIN = "https://mrvenki.github.io"
+
 # Create with: npx wrangler kv namespace create CLICKS  (paste the id below)
 [[kv_namespaces]]
 binding = "CLICKS"
