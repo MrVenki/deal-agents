@@ -10,6 +10,16 @@
       "text": "🔐 LAVNA Digital Smart Door Lock (6-way unlock)\nOpens with fingerprint, mobile app, OTP, PIN, RFID card or a manual key.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0CBCXKSSP?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQ0JDWEtTU1A_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=lavna-6way-lock&s=telegram"
+    },
+    {
+      "id": "mvy441r4-0",
+      "dealId": "aquaguard-sure-delight",
+      "niche": "water-kitchen",
+      "date": "2026-11-01",
+      "title": "Aquaguard Sure Delight RO+MC water purifier",
+      "text": "🚰 Aquaguard Sure Delight RO+MC water purifier\nRO purifier with a mineral cartridge from Aquaguard.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0CW62435R?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQ1c2MjQzNVI_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=aquaguard-sure-delight&s=telegram"
     }
   ],
   "llm": {},
@@ -19,7 +29,7 @@
       "clicks": 0
     },
     "water-kitchen": {
-      "posts": 0,
+      "posts": 1,
       "clicks": 0
     },
     "home-comfort": {
