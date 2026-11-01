@@ -37,6 +37,15 @@ test('lead needs consent, a valid phone, and the right origin', async () => {
   assert.equal([...env.CLICKS.m.keys()].filter((k) => k.startsWith('l:')).length, 0);
 });
 
+test('several origins can be allowed and bank/loan are stored', async () => {
+  const env = { CLICKS: kv(), SITE_ORIGIN: `${ORIGIN}, https://loans.example.in` };
+  const res = await worker.fetch(post({ ...good, loan: 'home-loan', bank: 'icici-bank' }, 'https://loans.example.in'), env, ctx);
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get('access-control-allow-origin'), 'https://loans.example.in');
+  const stored = JSON.parse([...env.CLICKS.m].find(([k]) => k.startsWith('l:'))[1]);
+  assert.deepEqual([stored.loan, stored.bank], ['home-loan', 'icici-bank']);
+});
+
 test('honeypot is accepted silently but nothing is stored', async () => {
   const env = { CLICKS: kv(), SITE_ORIGIN: ORIGIN };
   const res = await worker.fetch(post({ ...good, website: 'spam' }), env, ctx);

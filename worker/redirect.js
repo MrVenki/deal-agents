@@ -54,7 +54,8 @@ async function notifyOwner(env, lead) {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
   const text =
     `New loan lead\n${lead.name} · ${lead.phone}\nCity: ${lead.city || '-'}\n` +
-    `Amount: ₹${lead.amount.toLocaleString('en-IN')}\nPage: ${lead.page}`;
+    `Amount: ₹${lead.amount.toLocaleString('en-IN')}\n` +
+    `${lead.loan ? `Loan: ${lead.loan}${lead.bank ? ` / ${lead.bank}` : ''}\n` : ''}Page: ${lead.page}`;
   await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
@@ -63,9 +64,11 @@ async function notifyOwner(env, lead) {
 }
 
 async function handleLead(req, env, ctx) {
-  const origin = env.SITE_ORIGIN ?? '';
+  // SITE_ORIGIN may list several comma-separated origins (one per site or custom domain).
+  const allowed = (env.SITE_ORIGIN ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+  const origin = allowed.includes(req.headers.get('origin')) ? req.headers.get('origin') : '';
   const cors = {
-    'access-control-allow-origin': origin,
+    'access-control-allow-origin': origin || allowed[0] || '',
     'access-control-allow-methods': 'POST, OPTIONS',
     'access-control-allow-headers': 'content-type',
     vary: 'Origin',
@@ -74,7 +77,7 @@ async function handleLead(req, env, ctx) {
 
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
   if (req.method !== 'POST') return reply({ error: 'method' }, 405);
-  if (!origin || req.headers.get('origin') !== origin) return reply({ error: 'origin' }, 403);
+  if (!origin) return reply({ error: 'origin' }, 403);
 
   let b;
   try {
@@ -103,6 +106,8 @@ async function handleLead(req, env, ctx) {
     city: String(b.city ?? '').trim().slice(0, 60),
     amount: Math.min(Math.max(Number(b.amount) || 0, 0), 1e9),
     page: String(b.page ?? '').slice(0, 200),
+    loan: SAFE.test(String(b.loan ?? '')) ? b.loan : '',
+    bank: SAFE.test(String(b.bank ?? '')) ? b.bank : '',
     country: req.cf?.country ?? null,
     consent: true,
   };
