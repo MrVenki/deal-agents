@@ -1,0 +1,13 @@
+{
+  "name": "deal-agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "post": "node src/run.js post",
+    "dry": "node src/run.js post --dry",
+    "analyze": "node src/run.js analyze",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fx-lock-1",
+    "title": "Digital smart door lock with fingerprint and keypad",
+    "description": "Fingerprint, PIN and mechanical key entry. Popular with new flat owners.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR01"
+  },
+  {
+    "id": "fx-cam-1",
+    "title": "Indoor Wi-Fi security camera with night vision",
+    "description": "Two-way audio and motion alerts through a phone app.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR02"
+  },
+  {
+    "id": "fx-ro-1",
+    "title": "Under-sink RO water purifier for hard water",
+    "description": "Multi-stage filtration with a TDS controller, built for hard municipal water.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR03"
+  },
+  {
+    "id": "fx-mixer-1",
+    "title": "750W mixer grinder with 3 jars",
+    "description": "Everyday kitchen workhorse with overload protection.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR04"
+  },
+  {
+    "id": "fx-vac-1",
+    "title": "Robot vacuum cleaner with mapping",
+    "description": "Scheduled cleaning and app control for tile and marble floors.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR05"
+  },
+  {
+    "id": "fx-fan-1",
+    "title": "BLDC ceiling fan with remote",
+    "description": "Low power draw and a remote, a common pick for reducing electricity bills.",
+    "url": "https://www.amazon.in/dp/B0FIXTUR06"
+  }
+]
