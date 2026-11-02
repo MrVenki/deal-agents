@@ -40,6 +40,16 @@
       "text": "🔐 QUBO Smart Door Lock Essential Copper (Hero Group)\nSmart lock with fingerprint and mobile app unlocking, one of seven unlock methods.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0BS9LFSWJ?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQlM5TEZTV0o_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=qubo-essential-lock&s=telegram"
+    },
+    {
+      "id": "mvzjwxck-0",
+      "dealId": "urban-company-native-m1",
+      "niche": "water-kitchen",
+      "date": "2026-11-02",
+      "title": "Urban Company Native M1 water purifier",
+      "text": "🚰 Urban Company Native M1 water purifier\n10-stage RO+UV+copper+alkaline purifier.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0D79G62J3?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRDc5RzYySjM_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=urban-company-native-m1&s=telegram"
     }
   ],
   "llm": {},
@@ -49,7 +59,7 @@
       "clicks": 0
     },
     "water-kitchen": {
-      "posts": 1,
+      "posts": 2,
       "clicks": 0
     },
     "home-comfort": {
