@@ -70,6 +70,16 @@
       "text": "🔐 Godrej Neo Advantage smart lock\nMain door digital lock with four access modes including fingerprint.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0H6J94KMV?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwSDZKOTRLTVY_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=godrej-neo-lock&s=telegram"
+    },
+    {
+      "id": "mw11yfpm-0",
+      "dealId": "aquaguard-delight-nxt",
+      "niche": "water-kitchen",
+      "date": "2026-11-03",
+      "title": "Aquaguard Delight NXT Aquasaver water purifier",
+      "text": "🚰 Aquaguard Delight NXT Aquasaver water purifier\n9-stage RO+UV+UF+MC purifier.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0CW5YZ6VV?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQ1c1WVo2VlY_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=aquaguard-delight-nxt&s=telegram"
     }
   ],
   "llm": {},
@@ -79,7 +89,7 @@
       "clicks": 0
     },
     "water-kitchen": {
-      "posts": 2,
+      "posts": 3,
       "clicks": 0
     },
     "home-comfort": {
