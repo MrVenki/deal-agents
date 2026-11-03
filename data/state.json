@@ -60,12 +60,22 @@
       "text": "🏠 ECOVACS DEEBOT Y1 PRO robot vacuum and mop\n2-in-1 robot vacuum and mop for wet and dry cleaning.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0D17XGQX7?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRDE3WEdRWDc_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ecovacs-y1-pro&s=telegram"
+    },
+    {
+      "id": "mw0m3pvx-0",
+      "dealId": "godrej-neo-lock",
+      "niche": "home-security",
+      "date": "2026-11-03",
+      "title": "Godrej Neo Advantage smart lock",
+      "text": "🔐 Godrej Neo Advantage smart lock\nMain door digital lock with four access modes including fingerprint.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0H6J94KMV?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwSDZKOTRLTVY_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=godrej-neo-lock&s=telegram"
     }
   ],
   "llm": {},
   "niches": {
     "home-security": {
-      "posts": 2,
+      "posts": 3,
       "clicks": 0
     },
     "water-kitchen": {
