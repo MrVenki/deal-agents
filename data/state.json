@@ -50,6 +50,16 @@
       "text": "🚰 Urban Company Native M1 water purifier\n10-stage RO+UV+copper+alkaline purifier.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0D79G62J3?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRDc5RzYySjM_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=urban-company-native-m1&s=telegram"
+    },
+    {
+      "id": "mw01hbgy-0",
+      "dealId": "ecovacs-y1-pro",
+      "niche": "home-comfort",
+      "date": "2026-11-03",
+      "title": "ECOVACS DEEBOT Y1 PRO robot vacuum and mop",
+      "text": "🏠 ECOVACS DEEBOT Y1 PRO robot vacuum and mop\n2-in-1 robot vacuum and mop for wet and dry cleaning.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0D17XGQX7?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRDE3WEdRWDc_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ecovacs-y1-pro&s=telegram"
     }
   ],
   "llm": {},
@@ -63,7 +73,7 @@
       "clicks": 0
     },
     "home-comfort": {
-      "posts": 1,
+      "posts": 2,
       "clicks": 0
     }
   }
