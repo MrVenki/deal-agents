@@ -80,6 +80,16 @@
       "text": "🚰 Aquaguard Delight NXT Aquasaver water purifier\n9-stage RO+UV+UF+MC purifier.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0CW5YZ6VV?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwQ1c1WVo2VlY_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=aquaguard-delight-nxt&s=telegram"
+    },
+    {
+      "id": "mw1dg4bf-0",
+      "dealId": "ilife-v20",
+      "niche": "home-comfort",
+      "date": "2026-11-04",
+      "title": "ILIFE V20 robot vacuum cleaner",
+      "text": "🏠 ILIFE V20 robot vacuum cleaner\n2-in-1 vacuum and mop with laser navigation.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0DPHKKJ62?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRFBIS0tKNjI_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ilife-v20&s=telegram"
     }
   ],
   "llm": {},
@@ -93,7 +103,7 @@
       "clicks": 0
     },
     "home-comfort": {
-      "posts": 2,
+      "posts": 3,
       "clicks": 0
     }
   }
