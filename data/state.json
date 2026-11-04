@@ -90,12 +90,22 @@
       "text": "🏠 ILIFE V20 robot vacuum cleaner\n2-in-1 vacuum and mop with laser navigation.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0DPHKKJ62?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRFBIS0tKNjI_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ilife-v20&s=telegram"
+    },
+    {
+      "id": "mw221vi5-0",
+      "dealId": "elara-echo-lite-lock",
+      "niche": "home-security",
+      "date": "2026-11-04",
+      "title": "Elara Echo Lite non-WiFi smart door lock",
+      "text": "🔐 Elara Echo Lite non-WiFi smart door lock\nFingerprint, RFID card and PIN entry without needing a Wi-Fi connection.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0HH41MX5G?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwSEg0MU1YNUc_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=elara-echo-lite-lock&s=telegram"
     }
   ],
   "llm": {},
   "niches": {
     "home-security": {
-      "posts": 3,
+      "posts": 4,
       "clicks": 0
     },
     "water-kitchen": {
