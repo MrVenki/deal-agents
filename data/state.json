@@ -120,6 +120,16 @@
       "text": "🔐 Qubo Smart Cam 360° 3MP (Hero Group)\nIndoor 360° Wi-Fi camera that records to the cloud, no SD card required.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0G64G64YL?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRzY0RzY0WUw_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=qubo-smart-cam-3mp&s=telegram"
+    },
+    {
+      "id": "mw3hhjn8-0",
+      "dealId": "prestige-iris-mixer",
+      "niche": "water-kitchen",
+      "date": "2026-11-05",
+      "title": "Prestige Iris 750W mixer grinder",
+      "text": "🚰 Prestige Iris 750W mixer grinder\n750W mixer grinder with four jars: three stainless steel and a juicer jar.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B08CFJBZRK?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwOENGSkJaUks_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=prestige-iris-mixer&s=telegram"
     }
   ],
   "llm": {},
@@ -129,7 +139,7 @@
       "clicks": 0
     },
     "water-kitchen": {
-      "posts": 4,
+      "posts": 5,
       "clicks": 0
     },
     "home-comfort": {
