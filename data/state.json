@@ -110,12 +110,22 @@
       "text": "🚰 Philips HL7756 750W mixer grinder\n750W mixer grinder with three stainless steel jars.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B01GZSQJPA?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwMUdaU1FKUEE_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=philips-hl7756-mixer&s=telegram"
+    },
+    {
+      "id": "mw2tngck-0",
+      "dealId": "qubo-smart-cam-3mp",
+      "niche": "home-security",
+      "date": "2026-11-05",
+      "title": "Qubo Smart Cam 360° 3MP (Hero Group)",
+      "text": "🔐 Qubo Smart Cam 360° 3MP (Hero Group)\nIndoor 360° Wi-Fi camera that records to the cloud, no SD card required.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0G64G64YL?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRzY0RzY0WUw_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=qubo-smart-cam-3mp&s=telegram"
     }
   ],
   "llm": {},
   "niches": {
     "home-security": {
-      "posts": 4,
+      "posts": 5,
       "clicks": 0
     },
     "water-kitchen": {
