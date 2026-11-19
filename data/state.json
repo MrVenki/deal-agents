@@ -270,6 +270,16 @@
       "text": "🔐 Qubo Smart Cam 360° 3MP (Hero Group)\nIndoor 360° Wi-Fi camera that records to the cloud, no SD card required.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0G64G64YL?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRzY0RzY0WUw_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=qubo-smart-cam-3mp&s=telegram"
+    },
+    {
+      "id": "mwnj0m25-0",
+      "dealId": "ilife-v20",
+      "niche": "home-comfort",
+      "date": "2026-11-19",
+      "title": "ILIFE V20 robot vacuum cleaner",
+      "text": "🏠 ILIFE V20 robot vacuum cleaner\n2-in-1 vacuum and mop with laser navigation.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0DPHKKJ62?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRFBIS0tKNjI_dGFnPTU1NTU1MDM3LTIx&n=home-comfort&p=ilife-v20&s=telegram"
     }
   ],
   "llm": {},
@@ -283,7 +293,7 @@
       "clicks": 0
     },
     "home-comfort": {
-      "posts": 5,
+      "posts": 6,
       "clicks": 0
     }
   }
