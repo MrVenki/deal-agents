@@ -300,6 +300,16 @@
       "text": "🔐 CP PLUS CP-E45Q 4MP Wi-Fi security camera\nIndoor 4MP camera with AI human detection and a privacy mode.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0FPRFBXQM?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRlBSRkJYUU0_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=cpplus-e45q-cam&s=telegram"
+    },
+    {
+      "id": "mwp7h376-0",
+      "dealId": "preethi-blue-leaf-mixer",
+      "niche": "water-kitchen",
+      "date": "2026-11-20",
+      "title": "Preethi Blue Leaf Diamond 750W mixer grinder",
+      "text": "🚰 Preethi Blue Leaf Diamond 750W mixer grinder\n750W mixer grinder with three jars and a flexi lid.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0188KPKB2?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwMTg4S1BLQjI_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=preethi-blue-leaf-mixer&s=telegram"
     }
   ],
   "llm": {},
@@ -309,7 +319,7 @@
       "clicks": 0
     },
     "water-kitchen": {
-      "posts": 11,
+      "posts": 12,
       "clicks": 0
     },
     "home-comfort": {
