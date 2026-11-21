@@ -310,12 +310,22 @@
       "text": "🚰 Preethi Blue Leaf Diamond 750W mixer grinder\n750W mixer grinder with three jars and a flexi lid.\nCheck the current price and reviews before you buy.",
       "url": "https://www.amazon.in/dp/B0188KPKB2?tag=55555037-21",
       "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwMTg4S1BLQjI_dGFnPTU1NTU1MDM3LTIx&n=water-kitchen&p=preethi-blue-leaf-mixer&s=telegram"
+    },
+    {
+      "id": "mwppg41y-0",
+      "dealId": "manomay-protect-bot",
+      "niche": "home-security",
+      "date": "2026-11-21",
+      "title": "MANOMAY Protect Bot 3MP Wi-Fi pan-tilt camera",
+      "text": "🔐 MANOMAY Protect Bot 3MP Wi-Fi pan-tilt camera\nPan-tilt indoor camera with AI human tracking.\nCheck the current price and reviews before you buy.",
+      "url": "https://www.amazon.in/dp/B0D8BSGBCN?tag=55555037-21",
+      "link": "https://deal-redirect.helloagents.workers.dev/go?u=aHR0cHM6Ly93d3cuYW1hem9uLmluL2RwL0IwRDhCU0dCQ04_dGFnPTU1NTU1MDM3LTIx&n=home-security&p=manomay-protect-bot&s=telegram"
     }
   ],
   "llm": {},
   "niches": {
     "home-security": {
-      "posts": 13,
+      "posts": 14,
       "clicks": 0
     },
     "water-kitchen": {
